@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello JS</title>
+</head>
+<body>
+	<h1>Hei</h1>
+
+	<input id="age" value="18">
+	<button onchange="myFunction()">Try it</button>
+	<p id="demo"></p>
+	
+	
+	
+
+	<script>
+		function myFunction(){
+			var age, votable;
+			age = document.getElementById("age").value;
+			votable = (age < 18) ? "too young":"Old enought";
+			document.getElementById("demo").innerHTML = votable + " to vote";
+		};
+ </script>
+<button onclick="displayDate()">The time is?</button> 
+
+ <script>
+ 		function displayDate(){
+ 			document.getElementById("dem").innerHTML = Date();
+ 		};
+ </script>
+ <p id="dem"></p>
+ </body>
+</html>
